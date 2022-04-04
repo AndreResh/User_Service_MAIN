@@ -1,6 +1,6 @@
 FROM maven:3.8.4-jdk-11 AS MAVEN_BUILD
 COPY ./ ./
-RUN ./mvnw clean package -DskipTests
+RUN mvn clean package
 FROM openjdk:11-jre-slim
 COPY --from=MAVEN_BUILD /target/UserService-0.0.1-SNAPSHOT.jar /demo.jar
 CMD ["java", "-jar", "/demo.jar"]

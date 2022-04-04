@@ -1,0 +1,2 @@
+insert into public."user" (id, email, password) values (1, 'user@yandex.ru', '$2a$10$X1by5p9Fd0kKxwITMbiBs.o9g95ny9cjcs9JtVDrG7YLvDPFnbf/2'), (2, 'admin@yandex.ru', '$2a$10$tHaohpZWAp8PJyy1yIqqCe/mZ4NRxVII.lmbcJe46k6x82SEqHxIO');
+insert into public.user_roles (user_id, roles_id) values (1, 1), (2, 2);

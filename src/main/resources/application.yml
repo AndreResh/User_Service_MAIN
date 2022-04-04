@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/first_service
+    username: andrew
+    password: andrew
+
+
+  flyway:
+#    url: jdbc:postgresql://localhost:5432/first_service
+#    user: andrew
+#    password: andrew
+    out-of-order: true
+    schemas: public
+    locations: classpath:db/migration
+
+
+  jpa:
+#    show-sql: true
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true

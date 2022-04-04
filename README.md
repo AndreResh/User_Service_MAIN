@@ -31,4 +31,6 @@ Endpoints:
 - PATCH  /api/users/{id}/addRole - to add role to user with this id (name role in params)
 - PATCH  /api/users/{id}/removeRole - to remove role to user with this id (name role in params)
 
+EXAMPLE: http://localhost:8080/api/users
+
 Link for second microservice: https://github.com/AndreResh/User_Service_CLIENT
